@@ -22,7 +22,6 @@ ul {
 }
 
 .vcard {
-    height: 220px;
     border: 1px solid #4F4F4F;
     box-shadow: 3px 4px 2px #0D0D0D;
 }
@@ -39,8 +38,10 @@ ul {
 }
 
 .info {
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 10px;
     font-size: 12pt;
     font-family: 'Roboto-Light';
 }
