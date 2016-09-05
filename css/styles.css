@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    color: #424242;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*********************************************************
+ ***********************  Classes  ***********************
+ *********************************************************/
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.vcard {
+    height: 220px;
+    border: 1px solid #4F4F4F;
+    box-shadow: 3px 4px 2px #0D0D0D;
+}
+
+.name {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto-Bold';
+}
+
+.job-title {
+    font-family: 'Roboto-LightItalic';
+}
+
+.info {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto-Light';
+}
+
+/*********************************************************
+ ***********************    IDs    ***********************
+ *********************************************************/
+
+#vcard-back {
+    background-color: #3C8D2F;
+}
+
+#vcard-front {
+    background-color: #FFF9F9;
+}
+
+
+/*********************************************************
+ *********************** OVERRIDES ***********************
+ *********************************************************/
+.row {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
