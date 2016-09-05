@@ -34,12 +34,14 @@ ul {
 }
 
 .job-title {
+    font-size: 10pt;
     font-family: 'Roboto-LightItalic';
 }
 
 .info {
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 12pt;
     font-family: 'Roboto-Light';
 }
 
