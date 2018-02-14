@@ -1,0 +1,21 @@
+{
+  "extends": "google",
+  "plugins": ["angular", "html"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "angular": true,
+    "inject": true,
+    "module": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "no-invalid-this": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off",
+    "max-len": [1, 200, 4]
+  }
+}

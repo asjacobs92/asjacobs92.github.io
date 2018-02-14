@@ -1,0 +1,60 @@
+<div class="home">
+  <header>
+    <ul id="slide-out" class="side-nav fixed">
+      <li>
+        <div class="userView">
+          <img class="circle" src="/assets/img/profile.jpg">
+          <div class="white-text name"><span><i class="fa fa-lg fa-user" aria-hidden="true"></i></span> {{resume.name}}</div>
+          <div class="white-text email"><span><i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i></span> {{resume.email}}</div>
+          <div class="white-text email"><span><i class="fa fa-lg fa-calendar" aria-hidden="true"></i></span> {{resume.dateOfBirth}}</div>
+          <div class="white-text email"><span><i class="fa fa-lg fa-map-marker" aria-hidden="true"></i></span> {{resume.location}}</div>
+        </div>
+      </li>
+
+      <li><a class="waves-effect waves-secondary" ng-href="#summary"><i class="fa fa-lg fa-address-card" aria-hidden="true"></i>Summary</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="#education"><i class="fa fa-lg fa-graduation-cap" aria-hidden="true"></i>Education</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="#research"><i class="fa fa-lg fa-clipboard" aria-hidden="true"></i>Research</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="#publications"><i class="fa fa-lg fa-book" aria-hidden="true"></i>Publications</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="#cv"><i class="fa fa-lg fa-file-pdf-o" aria-hidden="true"></i>Curriculum Vitae</a></li>
+
+      <li><div class="divider"></div></li>
+
+      <li><a class="subheader">Social</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="{{resume.twitter}}"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="{{resume.github}}"><i class="fa fa-lg fa-github" aria-hidden="true"></i>Github</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="{{resume.linkedin}}"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="{{resume.googleScholar}}"><i class="ai ai-lg ai-google-scholar" aria-hidden="true"></i>Google Scholar</a></li>
+      <li><a class="waves-effect waves-secondary" ng-href="{{resume.researchGate}}"><i class="ai ai-lg ai-researchgate" aria-hidden="true"></i>Research Gate</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="container">
+      <div name="summary" class="row section scrollspy">
+        <div class="col s12">
+          <h1>Summary</h1>
+          <div class="card-panel">
+            <p class="caption">
+              First year PhD student in Computer Science, in the Federal University of Rio Grande do Sul.
+              Passionate about science and development, with strong will to learn about a multitude of subjects,
+              and to build impacting and complex projects. Research interests include network management,
+              Network Functions Virtualization, self-driving networks, programmable networks and artificial intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div name="education" class="row">
+        <h1>Education</h1>
+      </div>
+      <div name="research" class="row">
+        <h1>Research</h1>
+      </div>
+      <div name="publications" class="row">
+        <h1>Publications</h1>
+      </div>
+      <div name="cv" class="row">
+        <h1>Curriculum Vitae</h1>
+      </div>
+    <div>
+  </main>
+</div>
