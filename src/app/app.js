@@ -15,7 +15,7 @@
   function routes($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
       url: '/',
-      component: 'home'
+      component: 'home',
     });
 
     $urlRouterProvider.otherwise('/');
@@ -25,7 +25,7 @@
     $rootScope.keys = Object.keys;
     $http
       .get('/assets/data/resume.json')
-      .then(data => ($rootScope.resume = data.data))
+      .then((data) => ($rootScope.resume = data.data))
       .catch(() => $log.error('Failed to load resume.'));
   }
 })();

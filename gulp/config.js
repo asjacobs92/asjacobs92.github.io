@@ -19,9 +19,9 @@ exports.htmlmin = {
  * @type {{dist: string, fonts: string, styles: string, partials: string, src: string, tmp: string}}
  */
 exports.paths = {
-  dist: 'dist',
-  fonts: 'dist/fonts',
-  styles: 'dist/css',
+  dist: 'docs',
+  fonts: 'docs/fonts',
+  styles: 'docs/css',
   partials: '.tmp/partials',
   src: 'src',
   tmp: '.tmp',

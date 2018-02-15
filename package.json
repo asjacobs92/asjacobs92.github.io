@@ -11,6 +11,7 @@
   "author": "Arthur Jacobs <asjacobs@inf.ufrgs.br>",
   "scripts": {
     "serve": "gulp serve",
+    "build": "gulp build",
     "docs:gulp": "gulpdoc ./gulp/*.js"
   },
   "devDependencies": {

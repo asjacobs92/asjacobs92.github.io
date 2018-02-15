@@ -20,7 +20,7 @@ gulp.task('other', function() {
       path.join(config.paths.src, '/**/*'),
       path.join(config.paths.src, '/**/.*'),
       path.join('!' + config.paths.src, '/**/*.{css,html,js,styl}'),
-      path.join('!' + config.paths.src, '/app/**/', config.locales.directory, '/*.json'),
+      path.join('!' + config.paths.src, '/app/**/', '/*.json'),
     ])
     .pipe(filter)
     .pipe($.size({title: 'other'}))
