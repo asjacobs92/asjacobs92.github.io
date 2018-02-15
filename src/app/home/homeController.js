@@ -3,15 +3,13 @@
 
   angular.module('app').controller('HomeController', HomeController);
 
-  function HomeController($log) {
+  function HomeController($log, $document, $location) {
     let vm = this;
 
-    vm.name = 'Arthur Selle Jacobs';
+    vm.scrollTo = scrollTo;
 
-    initalize();
-
-    function initalize() {
-      $log.info('hey');
+    function scrollTo(id) {
+      $document.scrollToElementAnimated(angular.element(document.getElementById(id)));
     }
   }
 })();

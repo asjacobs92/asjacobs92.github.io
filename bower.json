@@ -22,6 +22,7 @@
     "stylus": "^0.54.5",
     "components-font-awesome": "^4.7.0",
     "roboto-fontface": "^0.9.0",
-    "academicons": "^1.8.2"
+    "academicons": "^1.8.2",
+    "angular-scroll": "^1.0.2"
   }
 }
