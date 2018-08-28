@@ -10,7 +10,7 @@
   "googleScholar": "https://scholar.google.com.br/citations?user=V8cyM_4AAAAJ&hl=en",
   "researchGate": "https://www.researchgate.net/profile/Arthur_Jacobs2",
   "summary":
-    "First year PhD student in Computer Science, in the Federal University of Rio Grande do Sul. Passionate about science and development, with strong will to learn about a multitude of subjects, and to build impacting and complex projects. Research interests include network management, Network Functions Virtualization, self-driving networks, programmable networks and artificial intelligence.",
+    "Second year PhD student in Computer Science, in the Federal University of Rio Grande do Sul. Passionate about science and development, with strong will to learn about a multitude of subjects, and to build impacting and complex projects. Research interests include network management, Network Functions Virtualization, self-driving networks, programmable networks and artificial intelligence.",
   "education": [
     {
       "title": "Ph.D. in Computer Science",
@@ -18,8 +18,7 @@
       "startDate": "August 2017",
       "endDate": "June 2021 (Expected)",
       "location": "Porto Alegre, RS - Brazil",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "Worked under the supervision of Prof. Lisandro Z. Granville, researching network management topics, such as Network Functions Virtualization and Software Defined Networking. Developed an affinity metric for Virtualized Network Functions, to identify and predict performance degradations in virtualized Service Function Chains. Devised a refinement method for network intents expressed as natural language enabling operators to deploy network configurations using a conversational interface, such as Google Assistant.",
       "image": "/assets/img/ufrgs.jpg"
     },
     {
@@ -28,8 +27,7 @@
       "startDate": "January 2014",
       "endDate": "December 2014",
       "location": "College Park, MD - US",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "Exchange year on the Brazilian Scientific Mobility Program (BSMP), a study abroad program financed by the Brazilian Government. Studied for two semesters at the University of Maryland, doing courses from the Computer Science major and others, such as Compilers and Software Engineering. Also had the opportunity to work in a summer intership with Prof. Mark Jacobs, at the Human-Computer Interaction labs.",
       "image": "/assets/img/umd.png"
     },
     {
@@ -39,8 +37,65 @@
       "endDate": "March 2011",
       "location": "Porto Alegre, RS - Brazil",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Bachelor Degree in Computer Science at UFRGS, one of the top Computer Science majors in Brazil. Spent one year studying abroad, in 2014, in which I had to pause all my activities at the University.",
       "image": "/assets/img/ufrgs.jpg"
     }
-  ]
+  ],
+  "publications": {
+    "conferences": [
+      {
+        "title": "Artificial neural network model to predict affinity for virtual network functions",
+        "authors": "A. S. Jacobs, R. J. Pfitscher, R. L. dos Santos, M. F. Franco, E. J. Scheid and L. Z. Granville",
+        "conference": "2018 IFIP/IEEE Network Operations and Management Symposium (NOMS)",
+        "location": "Taipei, Taiwan",
+        "year": "2018",
+        "doi": "https://doi.org/10.1109/NOMS.2018.8406253"
+      },
+      {
+        "title": "A Model for Quantifying Performance Degradation in Virtual Network Function Service Chains",
+        "authors": "R. J. Pfitscher, E. J. Scheid, A. S. Jacobs, M. F. Franco, R. L. dos Santos, A. E. Schaeffer-Filho and L. Z. Granville",
+        "conference": "2018 IFIP/IEEE Network Operations and Management Symposium (NOMS)",
+        "location": "Taipei, Taiwan",
+        "year": "2018",
+        "doi": "https://doi.org/10.1109/NOMS.2018.8406268"
+      },
+      {
+        "title": "Affinity measurement for NFV-enabled networks: A criteria-based approach",
+        "authors": "A. S. Jacobs, R. L. dos Santos, M. F. Franco, E. J. Scheid, R. J. Pfitscher and L. Z. Granville",
+        "conference": "2017 IFIP/IEEE Symposium on Integrated Network and Service Management (IM)",
+        "location": "Lisbon, Portugal",
+        "year": "2017",
+        "doi": "https://doi.org/10.23919/INM.2017.7987272"
+      }
+    ],
+    "journals": [
+      {
+        "title": "Monitoring Virtual Nodes using mashups",
+        "authors": "O. M. C. Rendon, C. R. P. dos Santos, A. S. Jacobs and L. Z. Granville",
+        "journal": "Computer Networks",
+        "volume": "64",
+        "pages": "55 - 70",
+        "year": "2014",
+        "doi": "https://doi.org/10.1016/j.comnet.2014.02.007"
+      }
+    ],
+    "others": [
+      {
+        "title": "Refining Network Intents for Self-driving Networks",
+        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "conference": "ACM SIGCOMM 2018 Workshop on Self-Driving Networks (SelfDN 2018)",
+        "location": "Budapest, Hungary",
+        "year": "2018",
+        "doi": "https://dx.doi.org/10.1145/3229584.3229590"
+      },
+      {
+        "title": "AMNESiA: Affinity measurement platform for NFV-enabled networks",
+        "authors": "A. S. Jacobs, R. L. dos Santos, M. F. Franco, E. J. Scheid, R. J. Pfitscher and L. Z. Granville",
+        "conference": "2017 IFIP/IEEE Symposium on Integrated Network and Service Management (IM)",
+        "location": "Lisbon, Portugal",
+        "year": "2017",
+        "doi": "https://doi.org/10.23919/INM.2017.7987403"
+      }
+    ]
+  }
 }
