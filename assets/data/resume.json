@@ -70,6 +70,15 @@
     ],
     "journals": [
       {
+        "title": "Refining Network Intents for Self-driving Networks",
+        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "journal": "ACM SIGCOMM Computer Communication Review",
+        "volume": "48 Issue 5",
+        "pages": "To appear",
+        "year": "2018",
+        "doi": ""
+      },
+      {
         "title": "Monitoring Virtual Nodes using mashups",
         "authors": "O. M. C. Rendon, C. R. P. dos Santos, A. S. Jacobs and L. Z. Granville",
         "journal": "Computer Networks",
