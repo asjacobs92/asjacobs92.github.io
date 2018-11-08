@@ -70,11 +70,11 @@
     ],
     "journals": [
       {
-        "title": "Refining Network Intents for Self-driving Networks",
+        "title": "Refining Network Intents for Self-driving Networks (To appear)",
         "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
         "journal": "ACM SIGCOMM Computer Communication Review",
         "volume": "48 Issue 5",
-        "pages": "To appear",
+        "pages": "",
         "year": "2018",
         "doi": ""
       },
