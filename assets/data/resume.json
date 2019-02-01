@@ -70,13 +70,13 @@
     ],
     "journals": [
       {
-        "title": "Refining Network Intents for Self-driving Networks (To appear)",
+        "title": "Refining network intents for self-driving networks",
         "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
         "journal": "ACM SIGCOMM Computer Communication Review",
         "volume": "48 Issue 5",
-        "pages": "",
+        "pages": "55 - 63",
         "year": "2018",
-        "doi": ""
+        "doi": "https://doi.org/10.1145/3310165.3310173"
       },
       {
         "title": "Monitoring Virtual Nodes using mashups",
