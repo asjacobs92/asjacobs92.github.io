@@ -44,6 +44,14 @@
   "publications": {
     "conferences": [
       {
+        "title": "Identifying Elephant Flows in P4-Based IXP Networks",
+        "authors": "M. V. B. da Silva, A. S. Jacobs, R. J. Pfitscher and L. Z. Granville",
+        "conference": "2018 IEEE Global Communications Conference (GLOBECOM)",
+        "location": "Abu Dhabi, United Arab Emirates",
+        "year": "2018",
+        "doi": "https://doi.org/10.1109/GLOCOM.2018.8647685"
+      },
+      {
         "title": "Artificial neural network model to predict affinity for virtual network functions",
         "authors": "A. S. Jacobs, R. J. Pfitscher, R. L. dos Santos, M. F. Franco, E. J. Scheid and L. Z. Granville",
         "conference": "2018 IFIP/IEEE Network Operations and Management Symposium (NOMS)",
