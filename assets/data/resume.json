@@ -78,8 +78,17 @@
     ],
     "journals": [
       {
+        "title": "Guiltiness: A Practical Approach for Quantifying Virtual Network Functions Performance",
+        "authors": "R. J. Pfitscher,A . S. Jacobs, L. Zembruzki, R. L. dos Santos, E. J. Scheid, M. F. Franco, A. E. Schaeffer-Filho and L. Z. Granville",
+        "journal": "ACM SIGCOMM Computer Communication Review",
+        "volume": "In Print",
+        "pages": "Approved Manuscript",
+        "year": "2019",
+        "doi": "https://doi.org/10.1016/j.comnet.2019.06.001"
+      },
+      {
         "title": "Refining network intents for self-driving networks",
-        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira and L. Z. Granville",
         "journal": "ACM SIGCOMM Computer Communication Review",
         "volume": "48 Issue 5",
         "pages": "55 - 63",
@@ -99,7 +108,7 @@
     "others": [
       {
         "title": "Refining Network Intents for Self-driving Networks",
-        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "authors": "A. S. Jacobs, R. J. Pfitscher, R. A. Ferreira and L. Z. Granville",
         "conference": "ACM SIGCOMM 2018 Workshop on Self-Driving Networks (SelfDN 2018)",
         "location": "Budapest, Hungary",
         "award": "Best paper",
