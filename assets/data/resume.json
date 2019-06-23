@@ -79,10 +79,10 @@
     "journals": [
       {
         "title": "Guiltiness: A Practical Approach for Quantifying Virtual Network Functions Performance",
-        "authors": "R. J. Pfitscher,A . S. Jacobs, L. Zembruzki, R. L. dos Santos, E. J. Scheid, M. F. Franco, A. E. Schaeffer-Filho and L. Z. Granville",
+        "authors": "R. J. Pfitscher, A . S. Jacobs, L. Zembruzki, R. L. dos Santos, E. J. Scheid, M. F. Franco, A. E. Schaeffer-Filho and L. Z. Granville",
         "journal": "ACM SIGCOMM Computer Communication Review",
-        "volume": "In Print",
-        "pages": "Approved Manuscript",
+        "volume": "161",
+        "pages": "14 - 31",
         "year": "2019",
         "doi": "https://doi.org/10.1016/j.comnet.2019.06.001"
       },
