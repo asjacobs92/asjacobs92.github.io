@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
@@ -17,19 +17,19 @@ module.exports = {
       template: './_src/template/default.html',
       filename: '../_layouts/default.html',
     }),
-    new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve('_images'),
-        to: 'images/',
-      },
-    ]),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve('_files'),
-        to: 'files/',
-      },
-    ]),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve('_images'),
+          to: 'images/',
+        },
+        {
+          from: path.resolve('_files'),
+          to: 'files/',
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -44,23 +44,32 @@ module.exports = {
         },
       },
       {
-        test: /\.(css|scss)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            {
-              loader: 'postcss-loader',
-              options: {
-                config: {
-                  path: 'config/postcss.config.js',
-                },
-              },
-            },
-            { loader: 'sass-loader' },
-          ],
-        }),
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
+      // {
+      //   test: /\.(css|scss)$/,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: [
+      //       { loader: 'css-loader', options: { importLoaders: 1 } },
+      //       {
+      //         loader: 'postcss-loader',
+      //         options: {
+      //           config: {
+      //             path: 'config/postcss.config.js',
+      //           },
+      //         },
+      //       },
+      //       { loader: 'sass-loader' },
+      //     ],
+      //   }),
+      // },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
