@@ -1,0 +1,162 @@
+---
+layout: default
+---
+<div class="home">
+  <header>
+    {% include navigation.html %}
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="summary" class="row section scrollspy">
+        <h2>Summary</h2>
+        <div class="card-panel">
+          <p class="caption">
+            {{ site.data.resume.summary }}
+          </p>
+        </div>
+      </div>
+      <div id="awards" class="row section scrollspy">
+        <h2>Awards & Recognition</h2>
+        <div class="awards">
+          {% for entry in site.data.resume.awards %}
+          <div class="card">
+            <div class="card-image">
+              <img src="{{entry.image}}">
+              <a class="accent-bg btn-floating halfway-fab waves-effect waves-light" href="{{ entry.url }}" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title grey-text text-darken-4"><b>{{entry.year}}</b> {{entry.title}}</span>
+              <p class="justify">{{entry.description}}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div id="publications" class="row section scrollspy">
+        <h2>Selected Publications</h2>
+        <div class="card-panel">
+          <div class="publications">
+            <h4>Conferences</h4>
+            {% for entry in site.data.resume.publications.conferences %}
+            <div class="publication">
+              <span class="icon"><i class="material-icons">description</i></span>
+              <div class="info">
+                <div class="flex">
+                  <div>
+                    {% if entry.doi %}
+                    <a href="{{ entry.doi }}"><b>{{entry.title}}</b></a>
+                    {% else %}
+                    <b>{{entry.title}}</b>
+                    {% endif %}
+                  </div>
+                  
+                  {% if entry.url %}
+                  <span><span class="icon"><a href="{{entry.url}}" target="_blank"><i class="material-icons small">open_in_new</i> Project website</a></span></span>
+                  {% endif %}
+
+                  {% if entry.award %}
+                  <span><span class="icon"><i class="material-icons small">stars</i></span><span>{{ entry.award }}</span></span>
+                  {% endif %}
+                </div>
+                <div>{{entry.authors}}</div>
+                <div>{{entry.conference}}, {{entry.location}}, {{entry.year}}.</div>
+              </div>
+            </div>
+            {% endfor %}
+            <h4>Journals</h4>
+            {% for entry in site.data.resume.publications.journals %}
+            <div class="publication">
+              <span class="icon"><i class="material-icons">book</i></span>
+              <div class="info">
+                <div class="flex">
+                  <div>
+                    {% if entry.doi %}
+                    <a href="{{ entry.doi }}"><b>{{entry.title}}</b></a>
+                    {% else %}
+                    <b>{{entry.title}}</b>
+                    {% endif %}
+                  </div>
+                  {% if entry.award %}
+                  <span><span class="icon"><i class="material-icons small">stars</i></span><span>{{ entry.award }}</span></span>
+                  {% endif %}
+                </div>
+                <div>{{entry.authors}}</div>
+                <div>{{entry.journal}}, {% if entry.doi %}<span>Volume {{entry.volume}},</span>{% endif %} {% if entry.doi %}<span>pages {{entry.pages}},</span>{% endif %} {{entry.year}}</div>
+              </div>
+            </div>
+            {% endfor %}
+            <h4>Workshops, Posters and Others</h4>
+            {% for entry in site.data.resume.publications.others %}
+            <div class="publication">
+              <span class="icon"><i class="material-icons">assignment</i></span>
+              <div class="info">
+                <div class="flex">
+                  <div>
+                    {% if entry.doi %}
+                    <a href="{{ entry.doi }}"><b>{{entry.title}}</b></a>
+                    {% else %}
+                    <b>{{entry.title}}</b>
+                    {% endif %}
+                  </div>
+                  {% if entry.award %}
+                  <span><span class="icon"><i class="material-icons small">stars</i></span><span>{{ entry.award }}</span></span>
+                  {% endif %}
+                </div>
+                <div>{{entry.authors}}</div>
+                <div>{{entry.conference}}, {{entry.location}}, {{entry.year}}.</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div id="education" class="row section scrollspy">
+        <div class="col s12">
+          <h2>Education</h2>
+          <div class="timeline">
+            {% for entry in site.data.resume.education %}
+            <div class="timeline-event">
+              <div class="card timeline-content">
+                <div class="card-image waves-effect waves-light">
+                  <img class="activator" src="{{entry.image}}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">
+                    {{entry.title}}
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <p>{{entry.institution}}</p>
+                  <p><b>{{entry.startDate}} &mdash; {{entry.endDate}}</b></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">
+                    {{entry.title}}
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <div class="iconized-info-panel">
+                    <div class="iconized-info"><span class="icon"><i class="material-icons">account_balance</i></span>{{entry.institution}}</div>
+                    <div class="iconized-info"><span class="icon"><i class="material-icons">place</i></span>{{entry.location}}</div>
+                    <div class="iconized-info"><span class="icon"><i class="material-icons">event</i></span>{{entry.startDate}} &mdash; {{entry.endDate}}</div>
+                    <p>{{entry.description}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-badge white-text"><i class="material-icons">school</i></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div id="cv" class="row section scrollspy">
+        <div class="curriculum-vitae">
+          <h2>Curriculum Vitae</h2>
+          <a target="_self" href="/assets/file/cv.pdf" download="asjacobs-cv.pdf" class="download waves-effect waves-secondary btn">
+            <i class="material-icons left">file_download</i>Download
+          </a>
+        </div>
+      </div>
+    <div>
+  </main>
+</div>
+

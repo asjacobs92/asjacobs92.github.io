@@ -1,0 +1,135 @@
+body {
+  width: 100%;
+  height: 100%;
+  color: $primary-text;
+  background-color: $background-color;
+  font-family: 'Montserrat', sans-serif;
+
+  header,
+  main,
+  footer {
+    padding-left: 320px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background-color: $secondary-color-dark;
+  }
+
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .accent-text {
+    color: $secondary-color;
+  }
+
+  h1 {
+    color: $primary-color;
+  }
+  h2 {
+    color: $secondary-color;
+  }
+  p {
+    color: $secondary-text;
+  }
+
+  .btn,
+  .btn-floating {
+    background-color: $secondary-color;
+
+    &:focus {
+      background-color: $secondary-color-dark;
+    }
+    &:hover {
+      background-color: $secondary-color-dark;
+    }
+    &::after {
+      background-color: $secondary-color-dark;
+    }
+  }
+  .waves-effect {
+    &.waves-secondary {
+      .waves-ripple {
+        background-color: $secondary-color;
+      }
+    }
+  }
+  .iconized-info-panel {
+    .iconized-info {
+      line-height: 1;
+      font-size: 15px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        margin-top: 15px;
+      }
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+    .icon {
+      width: 25px;
+      margin-right: 5px;
+      text-align: center;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    header,
+    main,
+    footer {
+      padding: 0;
+    }
+
+    nav {
+      background-color: $primary-color;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}

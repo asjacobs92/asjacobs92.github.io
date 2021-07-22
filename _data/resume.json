@@ -1,0 +1,144 @@
+{
+  "profile": "/assets/images/profile.jpg",
+  "name": "Arthur Selle Jacobs",
+  "email": "asjacobs@inf.ufrgs.br",
+  "dateOfBirth": "Born on September 10, 1992",
+  "location": "Porto Alegre, RS - Brazil",
+  "twitter": "https://twitter.com/asjacobs92",
+  "github": "https://github.com/asjacobs92",
+  "linkedin": "https://www.linkedin.com/in/asjacobs92/",
+  "googleScholar": "https://scholar.google.com.br/citations?user=V8cyM_4AAAAJ&hl=en",
+  "researchGate": "https://www.researchgate.net/profile/Arthur_Jacobs2",
+  "summary": "Fourth year PhD student in Computer Science, in the Federal University of Rio Grande do Sul, advised by Prof. Dr. Lisandro Granville, and co-advised by Prof. Dr. Ronaldo Ferreira. Currently visiting Princeton University, under the supervision of Prof. Dr. Jennifer Rexford, and working closely with Dr. Walter Willinger, from NIKSUN. Passionate about science and development, with a strong will to learn about a multitude of subjects, and to build impacting and complex projects. Research interests include network management, Network Functions Virtualization, Intent-based Networking, Natural Language Processing for network management, self-driving networks, programmable networks and artificial intelligence. ",
+  "education": [
+    {
+      "title": "Visiting Student Research Collaborator",
+      "institution": "Princeton University",
+      "startDate": "September 2019",
+      "endDate": "July 2020",
+      "location": "Princeton, NJ - USA",
+      "description": "Worked under the supervision of Prof. Jennifer Rexford and Dr. Walter Willinger, from NIKSUN, researching network profiling techniques and traffic behavior models in programmable data plane networks, using the P4 language. Also explored the applicability of eXplainable AI (XAI) techiniques on machine learning-base cybersecurity methods.",
+      "image": "/assets/images/princeton.jpg"
+    },
+    {
+      "title": "Ph.D. in Computer Science",
+      "institution": "Federal University of Rio Grande do Sul",
+      "startDate": "August 2017",
+      "endDate": "March 2022 (Expected)",
+      "location": "Porto Alegre, RS - Brazil",
+      "description": "Working under the supervision of Prof. Lisandro Z. Granville, researching network management topics, such as Network Functions Virtualization and Software Defined Networking. Developed an affinity metric for Virtualized Network Functions, to identify and predict performance degradations in virtualized Service Function Chains. Devised a refinement method for network intents expressed as natural language enabling operators to deploy network configurations using a conversational interface, such as Google Assistant. Also studying the applicability of XAI in ML-based networking solutions, and cybersecurity in particular.",
+      "image": "/assets/images/ufrgs.jpg"
+    },
+    {
+      "title": "Study Abroad, BSMP",
+      "institution": "University of Maryland",
+      "startDate": "January 2014",
+      "endDate": "December 2014",
+      "location": "College Park, MD - US",
+      "description": "Exchange year on the Brazilian Scientific Mobility Program (BSMP), a study abroad program financed by the Brazilian Government. Studied for two semesters at the University of Maryland, doing courses from the Computer Science major and others, such as Compilers and Software Engineering. Also had the opportunity to work in a summer intership with Prof. Mark Jacobs, at the Human-Computer Interaction labs.",
+      "image": "/assets/images/umd.png"
+    },
+    {
+      "title": "B.Sc. in Computer Science",
+      "institution": "Federal University of Rio Grande do Sul",
+      "startDate": "March 2011",
+      "endDate": "December 2016",
+      "location": "Porto Alegre, RS - Brazil",
+      "description": "Bachelor Degree in Computer Science at UFRGS, one of the top Computer Science majors in Brazil. Spent one year studying abroad, in 2014, in which I had to pause all my activities at the University.",
+      "image": "/assets/images/ufrgs.jpg"
+    }
+  ],
+  "awards": [
+    {
+      "title": "IBM PhD Fellowship Award",
+      "year": 2020,
+      "url": "https://www.research.ibm.com/university/awards/fellowships-awardees.html#example2-tab1",
+      "image": "/assets/images/ibm.png",
+      "description": "For academic excellence and expertise in pioneering research areas, including artificial intelligence, data science, and security."
+    }
+  ],
+  "publications": {
+    "conferences": [
+      {
+        "title": "Hey, Lumi! Using Natural Language for Intent-Based Network Management",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. J. Pfitscher, R. H. Ribeiro, R. A. Ferreira, L. Z. Granville, W. Willinger, S. G. Rao",
+        "conference": "2021 USENIX Annual Technical Conference (USENIX ATC 21)",
+        "location": "Virtual Conference",
+        "year": "2021",
+        "doi": "https://www.usenix.org/conference/atc21/presentation/jacobs",
+        "url": "https://lumichatbot.github.io"
+      },
+      {
+        "title": "SecBot: a Business-Driven Conversational Agent for Cybersecurity Planning and Management",
+        "authors": "M. F. Franco, B. Rodrigues, E. J. Scheid, <u><b>A. S. Jacobs</b></u>, C. Killer, L. Z. Granville, B. Stiller",
+        "conference": "2020 16th International Conference on Network and Service Management (CNSM)",
+        "location": "Izmir, Turkey",
+        "year": "2020",
+        "doi": "https://doi.org/10.23919/CNSM50824.2020.9269037"
+      },
+      {
+        "title": "Artificial neural network model to predict affinity for virtual network functions",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. J. Pfitscher, R. L. dos Santos, M. F. Franco, E. J. Scheid and L. Z. Granville",
+        "conference": "2018 IFIP/IEEE Network Operations and Management Symposium (NOMS)",
+        "location": "Taipei, Taiwan",
+        "year": "2018",
+        "doi": "https://doi.org/10.1109/NOMS.2018.8406253"
+      },
+      {
+        "title": "A Model for Quantifying Performance Degradation in Virtual Network Function Service Chains",
+        "authors": "R. J. Pfitscher, E. J. Scheid, <u><b>A. S. Jacobs</b></u>, M. F. Franco, R. L. dos Santos, A. E. Schaeffer-Filho and L. Z. Granville",
+        "conference": "2018 IFIP/IEEE Network Operations and Management Symposium (NOMS)",
+        "location": "Taipei, Taiwan",
+        "year": "2018",
+        "doi": "https://doi.org/10.1109/NOMS.2018.8406268"
+      },
+      {
+        "title": "Affinity measurement for NFV-enabled networks: A criteria-based approach",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. L. dos Santos, M. F. Franco, E. J. Scheid, R. J. Pfitscher and L. Z. Granville",
+        "conference": "2017 IFIP/IEEE Symposium on Integrated Network and Service Management (IM)",
+        "location": "Lisbon, Portugal",
+        "year": "2017",
+        "doi": "https://doi.org/10.23919/INM.2017.7987272"
+      }
+    ],
+    "journals": [
+      {
+        "title": "Guiltiness: A Practical Approach for Quantifying Virtual Network Functions Performance",
+        "authors": "R. J. Pfitscher, <u><b>A. S. Jacobs</b></u>, L. Zembruzki, R. L. dos Santos, E. J. Scheid, M. F. Franco, A. E. Schaeffer-Filho and L. Z. Granville",
+        "journal": "Computer Networks",
+        "volume": "161",
+        "pages": "14 - 31",
+        "year": "2019",
+        "doi": "https://doi.org/10.1016/j.comnet.2019.06.001"
+      },
+      {
+        "title": "Refining Network Intents for Self-driving Networks",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "journal": "ACM SIGCOMM Computer Communication Review",
+        "volume": "48 Issue 5",
+        "pages": "55 - 63",
+        "year": "2018",
+        "doi": "https://doi.org/10.1145/3310165.3310173"
+      }
+    ],
+    "others": [
+      {
+        "title": "Deploying Natural Language Intents with Lumi",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. J. Pfitscher, R. H. Ribeiro, R. A. Ferreira, L. Z. Granville, S. G. Rao",
+        "conference": "ACM SIGCOMM 2019 Conference Posters and Demos",
+        "location": "Beijing, China",
+        "year": "2019",
+        "doi": "http://doi.acm.org/10.1145/3342280.3342315"
+      },
+      {
+        "title": "Refining Network Intents for Self-driving Networks",
+        "authors": "<u><b>A. S. Jacobs</b></u>, R. J. Pfitscher, R. A. Ferreira, L. Z. Granville",
+        "conference": "ACM SIGCOMM 2018 Workshop on Self-Driving Networks (SelfDN 2018)",
+        "location": "Budapest, Hungary",
+        "award": "Best paper",
+        "year": "2018",
+        "doi": "https://dx.doi.org/10.1145/3229584.3229590"
+      }
+    ]
+  }
+}
