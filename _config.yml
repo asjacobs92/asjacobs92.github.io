@@ -3,7 +3,7 @@ email: asjacobs@inf.ufrgs.br
 description: Personal website
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://asjacobs92.github.com'
-theme_color: '#c0ffee'
+theme_color: '#0e86d4'
 twitter_username: asjacobs92
 github_username: asjacobs92
 author: Arthur Jacobs
@@ -27,7 +27,6 @@ google_analytics: UA-128184603-1
 markdown: kramdown
 minify_html: false
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - octopress-minify-html

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const CriticalPlugin = require('webpack-plugin-critical').CriticalPlugin;
+const { CriticalPlugin } = require('webpack-plugin-critical');
 const path = require('path');
 
 module.exports = {
