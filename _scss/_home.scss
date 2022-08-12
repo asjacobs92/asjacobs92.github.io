@@ -1,57 +1,96 @@
 .home {
-  .sidenav {
-    width: 320px;
-    max-width: 90%;
-    height: 100%;
+  margin: 100px 150px;
 
-    .user-view {
+  h1 {
+    max-width: 200px;
+    font-size: 64px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .caption {
+    font-size: 18px;
+    margin: 3.8rem 0 1.68rem 0;
+  }
+
+  .top-row {
+    margin-bottom: 80px;
+  }
+
+  .download {
+    width: 220px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    svg {
+      height: 18px;
+    }
+  }
+
+  .iconized-info-panel {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+  }
+
+  .iconized-info {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 14px;
+      margin-right: 10px;
+      text-align: center;
+      color: $primary-text-dark;
       background-color: $primary-color;
       display: flex;
-      flex-direction: column;
+      align-items: center;
 
-      .iconized-info {
-        justify-content: space-between;
-        &.name {
-          font-size: 24px;
-          margin-bottom: 10px;
-          text-align: center;
-        }
-      }
-
-      .circle {
-        height: 140px;
-        width: 140px;
+      i {
         display: block;
         margin: auto;
-        border: 3px solid $secondary-color;
+      }
+
+      svg {
+        height: 18px;
+        display: block;
+        margin: auto;
       }
     }
   }
 
   .container {
-    margin-top: -60px;
-
     .section {
       padding: 0;
     }
 
-    #summary {
-      text-align: justify;
-    }
+    .card {
+      max-width: 300px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: inherit;
 
-    .awards {
-      display: flex;
-
-      .card {
-        max-width: 380px;
+      .card-content {
+        padding: 10px;
       }
 
       .card-image {
         img {
-          max-height: 300px;
+          max-height: 200px;
           object-fit: cover;
         }
       }
+    }
+
+    .awards {
+      display: flex;
     }
 
     .timeline {
@@ -62,13 +101,6 @@
         padding: 5px 0;
         &:not(:first-child) {
           margin-top: -100px;
-        }
-
-        .card-image {
-          img {
-            height: 300px;
-            object-fit: cover;
-          }
         }
 
         .timeline-content {
@@ -88,7 +120,7 @@
           width: 2px;
           height: calc(50% - 30px);
           position: absolute;
-          background: $divider-color;
+          background: $secondary-color;
           left: calc(50% - 1px);
           top: 0;
         }
@@ -98,7 +130,7 @@
           width: 2px;
           height: calc(50% - 30px);
           position: absolute;
-          background: $divider-color;
+          background: $secondary-color;
           left: calc(50% - 1px);
           top: calc(50% + 30px);
         }
@@ -125,70 +157,67 @@
       }
 
       .timeline-badge {
-        display: block;
+        display: flex;
         position: absolute;
         width: 40px;
         height: 40px;
-        background: $secondary-color;
+        border: 2px solid $secondary-color;
         top: calc(50% - 20px);
         right: calc(50% - 20px);
         border-radius: 50%;
-        text-align: center;
-        cursor: default;
-        i {
-          font-size: 25px;
-          line-height: 40px;
-        }
-      }
+        align-items: center;
 
-      .card-reveal {
-        .education-entry-info {
-          line-height: 1;
-          margin: 5px 0;
+        .current {
+          display: block;
+          width: 18px;
+          height: 18px;
+          background-color: $secondary-color;
+          border-radius: 50%;
+          margin: 0 auto;
         }
       }
     }
 
     .publications {
+      > .publication:nth-child(odd) {
+        border: 1px solid $border-color;
+        border-radius: 2px;
+      }
+
       .publication {
         display: flex;
         padding: 10px;
 
-        .icon {
-          color: $secondary-color;
-          margin: auto 10px auto 0;
+        .title {
+          padding-bottom: 8px;
+        }
 
-          .material-icons {
-            font-size: 64px;
+        .pub-info {
+          font-size: 14px;
+        }
 
-            &.small {
-              font-size: 24px;
-              vertical-align: -5px;
-            }
+        .award {
+          padding-bottom: 8px;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          svg {
+            height: 16px;
           }
         }
 
         .info {
           width: 100%;
           font-size: 18px;
-
-          .flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
         }
-      }
-    }
 
-    .curriculum-vitae {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .download {
-        margin: 2.3733333333rem 0 1.424rem 0;
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
     }
   }
@@ -196,8 +225,14 @@
 
 @media screen and (max-width: 1300px) {
   .home {
+    margin: 100px 100px;
+
     .container {
       .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .timeline-event {
           padding: 10px 0;
           &:not(:first-child) {
@@ -229,99 +264,80 @@
           left: 31px;
         }
       }
-
-      .publications {
-        .publication {
-          .icon {
-            margin: auto 5px auto 0;
-          }
-
-          .info {
-            text-align: justify;
-            font-size: 16px;
-          }
-        }
-      }
     }
   }
 }
 
 @media screen and (max-width: 992px) {
   .home {
-    .container {
-      margin-top: 0;
-    }
+    margin: 100px 50px;
   }
+}
 
-  @media screen and (max-width: 559px) {
-    .home {
-      .container {
-        .caption {
-          font-size: 16px;
-        }
+@media screen and (max-width: 559px) {
+  .home {
+    margin: 100px 25px;
 
-        .timeline {
-          .timeline-event {
+    .download {
+      margin: auto;
+    }
+
+    .container {
+      .timeline {
+        .timeline-event {
+          .timeline-content {
+            width: calc(100% - 30px);
+          }
+          &::before {
+            left: 5px;
+          }
+          &::after {
+            left: 5px;
+          }
+          &:nth-child(even) {
             .timeline-content {
-              width: calc(100% - 30px);
+              margin-left: 30px;
             }
-            &::before {
-              left: 5px;
-            }
-            &::after {
-              left: 5px;
-            }
-            &:nth-child(even) {
-              .timeline-content {
-                margin-left: 30px;
-              }
-            }
-            &:nth-child(odd) {
-              .timeline-content {
-                margin-left: 30px;
-              }
-            }
-
-            .card-image {
-              img {
-                height: 200px;
-                object-fit: cover;
-              }
+          }
+          &:nth-child(odd) {
+            .timeline-content {
+              margin-left: 30px;
             }
           }
 
-          .timeline-badge {
-            left: -15px;
-          }
-        }
-
-        .publications {
-          .publication {
-            flex-direction: column;
-            align-items: center;
-
-            .flex {
-              flex-direction: column-reverse;
-            }
-
-            .icon {
-              margin: auto 5px auto 0;
-
-              .material-icons {
-                font-size: 96px;
-              }
-            }
-
-            .info {
-              text-align: justify;
-              font-size: 16px;
+          .card-image {
+            img {
+              height: 200px;
+              object-fit: cover;
             }
           }
         }
 
-        .curriculum-vitae {
-          .download {
-            margin: auto;
+        .timeline-badge {
+          left: -15px;
+        }
+      }
+
+      .publications {
+        .publication {
+          flex-direction: column;
+          align-items: center;
+
+          .flex {
+            flex-direction: column-reverse;
+          }
+
+          .icon {
+            margin: auto 5px auto 0;
+
+            .material-icons {
+              font-size: 96px;
+            }
+          }
+
+          .info {
+            text-align: justify;
+            font-size: 16px;
           }
         }
       }

@@ -14,8 +14,10 @@ module.exports = {
       logo: './_images/icon.png',
     }),
     new HtmlWebpackPlugin({
+      favicon: './_images/icon.png',
       template: './_src/template/default.html',
       filename: '../_layouts/default.html',
+      inject: 'head',
     }),
     new MiniCssExtractPlugin({ filename: '[name].css' }),
     new CopyWebpackPlugin({

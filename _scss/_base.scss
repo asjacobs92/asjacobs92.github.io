@@ -1,14 +1,14 @@
 body {
   width: 100%;
   height: 100%;
-  color: $primary-text;
+  color: $secondary-text;
   background-color: $background-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', serif;
 
-  header,
-  main,
-  footer {
-    padding-left: 320px;
+  .footer {
+    width: 100%;
+    height: 300px;
+    background-color: $primary-color;
   }
 
   h1,
@@ -16,12 +16,23 @@ body {
   h3,
   h4,
   h5 {
-    font-family: 'Cairo', sans-serif;
+    color: $primary-text;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a,
+  p {
+    color: $secondary-text;
+    text-align: justify;
   }
 
   .btn:hover,
   .btn:active {
-    background-color: $secondary-color-dark;
+    background-color: $secondary-color;
   }
 
   nav {
@@ -43,49 +54,28 @@ body {
   h2 {
     color: $secondary-color;
   }
-  p {
-    color: $secondary-text;
-  }
 
   .btn,
   .btn-floating {
-    background-color: $secondary-color;
+    background-color: $primary-color;
+    color: $primary-text-dark;
+    text-transform: none;
 
     &:focus {
-      background-color: $secondary-color-dark;
+      background-color: $secondary-color;
     }
     &:hover {
-      background-color: $secondary-color-dark;
+      background-color: $secondary-color;
     }
     &::after {
-      background-color: $secondary-color-dark;
+      background-color: $secondary-color;
     }
   }
   .waves-effect {
     &.waves-secondary {
       .waves-ripple {
-        background-color: $secondary-color;
+        background-color: $primary-color;
       }
-    }
-  }
-  .iconized-info-panel {
-    .iconized-info {
-      line-height: 1;
-      font-size: 15px;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      &:first-child {
-        margin-top: 15px;
-      }
-      &:last-child {
-        margin-bottom: 15px;
-      }
-    }
-    .icon {
-      width: 25px;
-      margin-right: 5px;
-      text-align: center;
     }
   }
 }

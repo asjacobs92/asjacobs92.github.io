@@ -1,17 +1,17 @@
-title: Arthur Jacobs
+title: Arthur Selle Jacobs
 email: asjacobs@inf.ufrgs.br
 description: Personal website
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://asjacobs92.github.com'
-theme_color: '#0e86d4'
+theme_color: '#434341'
 twitter_username: asjacobs92
 github_username: asjacobs92
-author: Arthur Jacobs
-logo: assets/images/large-logo.png
+author: Arthur Selle Jacobs
+logo: assets/images/icon.png
 twitter:
   username: asjacobs92
 social:
-  name: Arthur Jacobs
+  name: Arthur Selle Jacobs
   links:
     - https://twitter.com/asjacobs92
     - https://github.com/asjacobs92
