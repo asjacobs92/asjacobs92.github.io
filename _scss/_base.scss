@@ -5,6 +5,10 @@ body {
   background-color: $background-color;
   font-family: 'DM Sans', serif;
 
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
+
   .footer {
     width: 100%;
     height: 300px;
