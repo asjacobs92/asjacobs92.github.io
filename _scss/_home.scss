@@ -31,7 +31,6 @@
 
   .iconized-info-panel {
     display: flex;
-    flex: row;
     flex-wrap: wrap;
   }
 
@@ -278,8 +277,8 @@
   .home {
     margin: 100px 25px;
 
-    .download {
-      margin: auto;
+    .iconized-info-panel {
+      flex-direction: column;
     }
 
     .container {
