@@ -60,6 +60,19 @@ layout: default
               {% endfor %}
             </div>
           </div>
+
+          <div id="projects" class="row section scrollspy">
+            <h4>Projects</h4>
+            <div class="projects">
+              {% for entry in site.data.resume.projects %}
+              <a href="{{entry.url}}" target="_blank" rel="noopener noreferrer">
+                <div class="project-icon">
+                  <img src="{{entry.logo}}">
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
         </div>
         <div class="col l7 offset-l1 s12">
           <div id="publications" class="row section scrollspy">

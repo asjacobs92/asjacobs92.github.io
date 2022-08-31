@@ -57,6 +57,18 @@
       "description": "For academic excellence and expertise in pioneering research areas, including artificial intelligence, data science, and security."
     }
   ],
+  "projects": [
+    {
+      "title": "Trustee",
+      "url": "https://trusteeml.github.io",
+      "logo": "/assets/images/trustee.png"
+    },
+    {
+      "title": "Lumi",
+      "url": "https://lumichatbot.github.io",
+      "logo": "/assets/images/lumi.png"
+    }
+  ],
   "publications": [
     {
       "title": "AI/ML and Network Security: The Emperor has no Clothes",
@@ -73,7 +85,6 @@
       "location": "Virtual Conference",
       "year": "2021",
       "doi": "https://www.usenix.org/conference/atc21/presentation/jacobs",
-      "url": "https://lumichatbot.github.io",
       "type": "conference"
     },
 

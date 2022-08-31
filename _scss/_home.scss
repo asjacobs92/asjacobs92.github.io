@@ -16,6 +16,20 @@
     margin-bottom: 80px;
   }
 
+  .project-icon {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
   .download {
     width: 220px;
     border-radius: 14px;
@@ -88,7 +102,8 @@
       }
     }
 
-    .awards {
+    .awards,
+    .projects {
       display: flex;
     }
 
