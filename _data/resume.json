@@ -74,8 +74,10 @@
       "title": "AI/ML and Network Security: The Emperor has no Clothes",
       "authors": "<b>A. S. Jacobs</b>, R. Beltiukov, W. Willinger, R. A. Ferreira, A. Gupta, L. Z. Granville",
       "conference": "2022 ACM Conference on Computer and Communications Security (ACM CCS 2022)",
+      "award": "Honorable mention",
       "location": "Los Angeles",
       "year": "2022",
+      "doi": "https://doi.org/10.1145/3548606.3560609",
       "type": "conference"
     },
     {
