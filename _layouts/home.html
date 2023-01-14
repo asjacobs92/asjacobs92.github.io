@@ -47,7 +47,8 @@ layout: default
           <div id="awards" class="row section scrollspy">
             <h4>Awards & Recognition</h4>
             <div class="awards">
-              {% for entry in site.data.resume.awards %}
+              {% assign sorted_awards = site.data.resume.awards | sort: 'year' | reverse %}
+              {% for entry in sorted_awards %}
               <div class="card">
                 <div class="card-image">
                   <img src="{{entry.image}}">
@@ -61,27 +62,17 @@ layout: default
             </div>
           </div>
 
-          <div id="projects" class="row section scrollspy">
-            <h4>Projects</h4>
-            <div class="projects">
-              {% for entry in site.data.resume.projects %}
-              <a href="{{entry.url}}" target="_blank" rel="noopener noreferrer">
-                <div class="project-icon">
-                  <img src="{{entry.logo}}">
-                </div>
-              </a>
-              {% endfor %}
-            </div>
-          </div>
+
         </div>
         <div class="col l7 offset-l1 s12">
           <div id="publications" class="row section scrollspy">
             <h4>Selected Publications</h4>
             <div class="publications">
-              {% for entry in site.data.resume.publications %}
+              {% assign sorted_pubs = site.data.resume.publications | sort: 'year' | reverse %}
+              {% for entry in sorted_pubs %}
               <div class="publication">
                 <div class="info">
-                  <div class="flex">
+                  <div class="pub-header">
                     <div class="title">
                       {% if entry.doi %}
                       <a href="{{ entry.doi }}"><b>{{entry.title}}</b></a>
@@ -109,6 +100,19 @@ layout: default
 
                 </div>
               </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div id="projects" class="row section scrollspy">
+            <h4>Projects</h4>
+            <div class="projects">
+              {% for entry in site.data.resume.projects %}
+              <a href="{{entry.url}}" target="_blank" rel="noopener noreferrer">
+                <div class="project-icon">
+                  <img src="{{entry.logo}}">
+                </div>
+              </a>
               {% endfor %}
             </div>
           </div>

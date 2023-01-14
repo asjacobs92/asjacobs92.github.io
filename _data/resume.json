@@ -55,6 +55,13 @@
       "url": "https://www.research.ibm.com/university/awards/fellowships-awardees.html#example2-tab1",
       "image": "/assets/images/ibm.png",
       "description": "For academic excellence and expertise in pioneering research areas, including artificial intelligence, data science, and security."
+    },
+    {
+      "title": "Applied Networking Research Prize",
+      "year": 2023,
+      "url": "https://irtf.org/anrp/",
+      "image": "/assets/images/anrp.png",
+      "description": "For the work on evaluating machine learning for network security: “AI/ML for Network Security: The Emperor has no Clothes”."
     }
   ],
   "projects": [
